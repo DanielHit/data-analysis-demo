@@ -1,52 +1,17 @@
-print 1
+from collections import OrderedDict
+from random import randint
 
+# test different order diction
+favorite_languages = OrderedDict()
 
-def hello():
-    print "what a pitty"
-    return
+favorite_languages["jen"] = "python"
 
+for k, v in favorite_languages.items():
+    print k.title(), v
 
-def name():
-    return "daniel hello"
+x = 10
+while x > 5:
+    x = randint(1, 100)
+    print x
 
-
-hello()
-print name()
-
-age = "daniel hi   "
-
-print age.strip()
-print len(age)
-print len(age.strip())
-
-print (" we".strip())
-
-age = 23
-
-name = "23"
-
-
-students = ["jack", "rose", 23]
-print students
-
-for s in students:
-    print str(s) + "hello"
-
-print students[0]
-print students[-1]
-print students[0].title()
-print students[0].capitalize()
-
-del students[-1]
-print students
-
-students.append("fuck me")
-print students
-
-print students.pop()
-
-students.reverse()
-print students
-
-
-
+print x
